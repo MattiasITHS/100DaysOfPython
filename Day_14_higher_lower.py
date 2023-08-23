@@ -1,8 +1,4 @@
 import random
-from game_data import data
-from art import logo, vs
-
-print(logo)
 
 
 def format_data(account):
