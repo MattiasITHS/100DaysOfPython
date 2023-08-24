@@ -1,4 +1,8 @@
 import random
+from data import data
+from logo import logo, vs
+
+print(logo)
 
 
 def format_data(account):
@@ -74,4 +78,3 @@ while game_is_on:
     else:
         print("You lose")
         game_is_on = False
-
