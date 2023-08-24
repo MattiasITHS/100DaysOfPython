@@ -13,6 +13,7 @@ import random
 EASY = 10
 HARD = 5
 
+
 def set_difficulty():
     '''This sets the difficulty of the game depending on users input'''
     level = input("Choose a difficulty level. Type 'easy' or 'hard': ").lower()

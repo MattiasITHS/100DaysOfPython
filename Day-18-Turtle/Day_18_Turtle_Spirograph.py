@@ -2,6 +2,7 @@ import turtle
 from turtle import *
 import random
 
+
 # Set up the turtle
 screen = Screen()
 screen.bgcolor("white")
