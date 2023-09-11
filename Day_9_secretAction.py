@@ -1,14 +1,12 @@
-from replit import clear
 # HINT: You can call clear() to clear the output in the console.
-from art import logo
+from turtle import clear
 
-print(logo)
 print("Welcome to the secret auction program")
 
 bids = {}
 
 
-def find_higest_bidder(bidding_record):
+def find_highest_bidder(bidding_record):
     highest_bid = 0
     winner = ""
     # EX, bidding_record{"Angela": 123, "James": 321}
@@ -16,19 +14,19 @@ def find_higest_bidder(bidding_record):
         bid_amount = bidding_record[bidder]
         if bid_amount > highest_bid:
             highest_bid = bid_amount
-            winnder = bidder
-    print(f"The winner is {winner} with a bid of ${higest_bid}")
+            winner = bidder
+    print(f"The winner is {winner} with a bid of ${highest_bid}")
 
 
 bidding_finished = False
-while not more_bidders:
+while not bidding_finished:
     name = input("What is your name?: ")
     price = int(input("Whats is your bid?: $"))
     bids[name] = price
     should_continue = input("Are there any other bidders? Type 'yes' or 'no'. \n")
     if should_continue == 'no':
         bidding_finished = True
-        find_higest_bidder(bids)
+        find_highest_bidder(bids)
     elif should_continue == 'yes':
         clear()
 
